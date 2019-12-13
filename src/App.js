@@ -1,24 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import Routes from './routes';
+import logo from './assets/logo.png';
+
 function App() {
+  
+  function handleSubmit(){
+    alert('Hello World!');
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="container">
+      <img src={logo} alt="Task List"/>
+
+      <div className="content">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Crie suas <strong>tarefas</strong> e nunca mais esqueça das coisas :D
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="email">E-MAIL</label>
+          <input 
+            type="email" 
+            id="email" 
+            placeholder="Seu e-mail incrível"
+          />
+
+          <label htmlFor="password">PASSWORD</label>
+          <input 
+            type="password" 
+            id="password" 
+            placeholder="Sua senha incrível"
+          />
+          <button className="btn" type="submit">Entrar</button>
+        </form>
+      </div>
     </div>
   );
 }
