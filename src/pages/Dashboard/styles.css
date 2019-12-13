@@ -1,0 +1,66 @@
+#dash-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.icon-plus {
+    border: 1px solid #3d3d3d;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.icon-plus:hover{
+    background: #3d3d3d;
+    color: #3a3dff;
+}
+
+.tasks {
+    width: 100%;
+    height: fit-content;
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding:10px;
+}
+
+.tasks strong {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.tasks span {
+    font-size: 12px;
+    color: #333;
+}
+
+.task-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.check-icon{
+    cursor: pointer;
+}
+.edit-icon{
+    cursor: pointer;
+}
+.trash-icon{
+    cursor: pointer;
+}
+.check-icon:hover{
+    color: green;
+}
+.edit-icon:hover{
+    color: rgb(143, 143, 0);
+}
+.trash-icon:hover{
+    color: red;
+}
